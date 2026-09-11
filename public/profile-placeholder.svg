@@ -1,0 +1,43 @@
+<svg width="520" height="640" viewBox="0 0 520 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder profile graphic">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d2530"/>
+      <stop offset="100%" stop-color="#10141a"/>
+    </linearGradient>
+    <linearGradient id="figGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4fd1c5"/>
+      <stop offset="100%" stop-color="#3aa89e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#4fd1c5" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4fd1c5" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="rgba(237,234,227,0.06)"/>
+    </pattern>
+  </defs>
+
+  <rect width="520" height="640" fill="url(#bgGrad)"/>
+  <rect width="520" height="640" fill="url(#dots)"/>
+  <circle cx="260" cy="230" r="230" fill="url(#glow)"/>
+
+  <!-- abstract shoulders / bust -->
+  <path d="M60 640 C60 480 150 400 260 400 C370 400 460 480 460 640 Z" fill="#171d24" stroke="rgba(79,209,197,0.25)" stroke-width="1.5"/>
+  <path d="M90 640 C90 495 165 425 260 425 C355 425 430 495 430 640 Z" fill="url(#figGrad)" opacity="0.14"/>
+
+  <!-- head silhouette -->
+  <ellipse cx="260" cy="255" rx="108" ry="122" fill="#171d24" stroke="rgba(79,209,197,0.35)" stroke-width="1.5"/>
+  <ellipse cx="260" cy="255" rx="108" ry="122" fill="url(#figGrad)" opacity="0.08"/>
+
+  <!-- code-brackets motif standing in for a face -->
+  <text x="260" y="288" font-family="JetBrains Mono, ui-monospace, monospace" font-size="86" font-weight="600" fill="#4fd1c5" text-anchor="middle" opacity="0.9">&lt;/&gt;</text>
+
+  <!-- decorative corner ticks -->
+  <g stroke="rgba(237,234,227,0.25)" stroke-width="1.5">
+    <path d="M40 40 H84 M40 40 V84"/>
+    <path d="M480 40 H436 M480 40 V84"/>
+    <path d="M40 600 H84 M40 600 V556"/>
+  </g>
+
+  <text x="260" y="600" font-family="Inter, sans-serif" font-size="15" fill="#8b95a1" text-anchor="middle" letter-spacing="1.5">PHOTO PLACEHOLDER — SWAP IN /public</text>
+</svg>
